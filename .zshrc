@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-if [[ -f "/opt/homebrew/bin/brew" ]] then
+if [[ -f "/opt/homebrew/bin/brew" ]]; then
   # If you're using macOS, you'll want this enabled
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
@@ -93,4 +93,16 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
+# Enable welcome message for Anubhav Gain's workspace
+echo -e "\033[1;32m============================================\033[0m"
+echo -e "\033[1;32m|                                          |\033[0m"
+echo -e "\033[1;32m|   Welcome to Anubhav Gain's Workspace    |\033[0m"
+echo -e "\033[1;32m|                                          |\033[0m"
+echo -e "\033[1;32m============================================\033[0m\n"
+echo -e "\033[1;34m$(uname -a)\033[0m\n"
+echo -e "Committed to enhancing security and developing resilient software solutions.\n"
+echo -e "\033[1;32m============================================\033[0m\n"
+
+fastfetch
 ### End of Zinit's installer chunk
+

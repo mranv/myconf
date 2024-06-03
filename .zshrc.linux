@@ -7,3 +7,7 @@ echo -e "\033[1;32m============================================\033[0m\n"
 echo -e "\033[1;34m$(uname -a)\033[0m\n"
 echo -e "Committed to enhancing security and developing resilient software solutions.\n"
 echo -e "\033[1;32m============================================\033[0m\n"
+
+export NVM_DIR="$HOME/.configtde/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This load>

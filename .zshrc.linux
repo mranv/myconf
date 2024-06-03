@@ -1,3 +1,5 @@
+PS1='$ '
+
 # Enable welcome message for Anubhav Gain's workspace
 echo -e "\033[1;32m============================================\033[0m"
 echo -e "\033[1;32m|                                          |\033[0m"
